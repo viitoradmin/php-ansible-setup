@@ -69,7 +69,7 @@ The /etc/ansible/hosts file is the inventory file used by Ansible to define and 
 ```
 # Ansible-Target-Server
 [test]
-3.109.157.245 ansible_ssh_private_key_file=/home/$USER/.ssh/id_rsa
+3.111.217.83 ansible_ssh_private_key_file=/home/$USER/.ssh/id_rsa
 ```
 
 ## **Warning**
