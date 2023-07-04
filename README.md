@@ -1,6 +1,22 @@
 # Ansible Playbooks for Server Configuration
 This repository contains a collection of Ansible playbooks and configuration files to automate the setup and configuration of a server. Below is a brief description of each file and its purpose.
 
+## project-structure
+
+```
+.
+├── 01_check_connection.yml
+├── 02_install_mysql.yml
+├── 03_database_user.yml
+├── 04_install_php.yml
+├── 05_install_nginx.yml
+├── 06_download_adminer.yml
+├── 07_nginx-default_overwrite.yml
+├── 08_restart_FPM-Nginx.yml
+├── default
+└── README.md
+```
+
 `01_check_connection.yml`
 - This playbook checks the SSH connectivity to the target server to ensure that Ansible can establish a connection.
 
@@ -39,6 +55,13 @@ Please note that before executing these playbooks, you should update the necessa
 ansible-galaxy collection install community.mysql
 ```
 
+## Run Locally
+permission of file 
+
+```
+-rw-rw-r-- 1 $USER $USER 3013 Jul 4 15:38 *.yml
+```
+
 # Ansible-Hosts file
 
 The /etc/ansible/hosts file is the inventory file used by Ansible to define and organize the hosts (remote servers) that Ansible will manage. It is a text file that lists the hostnames or IP addresses of the remote servers and organizes them into groups.
@@ -48,3 +71,6 @@ The /etc/ansible/hosts file is the inventory file used by Ansible to define and 
 [test]
 3.109.157.245 ansible_ssh_private_key_file=/home/$USER/.ssh/id_rsa
 ```
+
+## **Warning**
+Assuming you've gone so far as to get Ansible running and have downloaded these playbooks, you probably understand how this stuff works and how much damage it could do. But just in case, These playbooks will remove data, destroy accounts and wreak havoc if pointed to the wrong account. Please be careful, keep backups and read the code before running it.
