@@ -1,9 +1,6 @@
 # Ansible Playbooks for Server Configuration
 This repository contains a collection of Ansible playbooks and configuration files to automate the setup and configuration of a server. Below is a brief description of each file and its purpose.
 
-`00_main.yml`
-- This is the main Ansible playbook file that includes all the other playbook files in the desired order. It serves as the entry point for executing the entire server configuration.
-
 `01_check_connection.yml`
 - This playbook checks the SSH connectivity to the target server to ensure that Ansible can establish a connection.
 
