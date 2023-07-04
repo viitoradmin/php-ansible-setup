@@ -1,0 +1,6 @@
+---
+- hosts: test
+  remote_user: ubuntu
+  tasks:
+    - name: Ping target server
+      ping:
