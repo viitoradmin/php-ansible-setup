@@ -1,3 +1,10 @@
+# Ansible Playbook for PHP-Based Website Environment Setup
+With the help of this Ansible playbook, a PHP-based website environment can be quickly set up on a fresh Linux server. This playbook automates the deployment process and installation processes by utilising the strength and adaptability of Ansible, assuring consistency and minimising manual setup efforts.
+
+Note: Make sure to have SSH access to the target server(s) with the appropriate credentials for Ansible to connect and execute commands remotely.
+
+By leveraging the power of Ansible, you can easily replicate and scale your PHP-based website environment across multiple servers with minimal effort. Enjoy the simplicity and efficiency provided by this playbook, ensuring a consistent and reliable setup for your web applications.
+
 # Ansible Playbooks for Server Configuration
 This repository contains a collection of Ansible playbooks and configuration files to automate the setup and configuration of a server. Below is a brief description of each file and its purpose.
 
